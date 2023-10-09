@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://kit.fontawesome.com/a2e0090f44.js" crossorigin="anonymous"></script>
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <div id="background" class="background">
+        <div id="container">
+            <section>
+                <div id="subcontainer-1">
+                    <header class="header1">
+                        <div id="navbar1">
+                            <img src="playbutton.png" width="50px" height="50px">
+                            <input type="search" placeholder="Search Music" class="search-bar">
+                        </div>
+                    </header>
+                    <main>
+                        <p>MUSIC THAT SOOTHES YOUR SOUL</p><br>
+                        <h1>We bring you the world of awesome sounds and beautiful music right on your fingertip</h1><br>
+                        <p>All genres of music: Afrobeats, Hip-Hop, RnB, Jazz, Gospel and every other sound</p><br>
+                        <div class="btn">
+                            <input type="button" id="btn1" value="Start Listening">
+                            <input type="button" id="btn2" value="Explore Channels">
+                        </div>                     
+                    </main>
+                </div>
+            </section>
+            <section>
+                <div id="subcontainer-2">
+                    <header class="header2">
+                        <div id="navbar2">
+                         <a href="#">HOME</a>
+                         <a href="#">ABOUT US</a>
+                         <a href="#">PREMIUM</a> 
+                         <button class="btn-signup">Sign up</button>  
+                        </div>
+                    </header>
+                    <div class="music-container">
+                        <div class="music-payer">
+                            <nav>
+                                <div class="circle">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </nav>
+                            <img src="Wizkid_-_More_Love,_Less_Ego.png" class="song-img">
+                            <h1>Bad To Me</h1>
+                            <p>Wizkid</p>
+                            <audio id="song">
+                                <source src="Wizkid-Bad-To-Me-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                            </audio>
+                            <input type="range" value="0" id="progress">
+                            <div class="controls">
+                                <div><i class="fa-solid fa-backward"></i></div>
+                                <div><i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                <div><i class="fa-solid fa-forward"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+         
+            <footer>
+                <div class="sponsor">
+                    <img src="appstore.jpg" id="download" width="200px" height="100px">
+                    <img src="google-play-logo.jpg" id="download" width="200px" height="100px">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<div id="footer"></div>
